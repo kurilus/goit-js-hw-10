@@ -1,0 +1,70 @@
+.timer-part {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 36px;
+    margin-left: 156px;
+}
+
+.timer-input {
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    border-radius: 4px;
+    width: 272px;
+    height: 40px;
+}
+
+.timer-btn {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    background-color: #cfcfcf;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #989898;
+}
+
+.timer {
+display: flex;
+flex-direction: row;
+gap: 24px;
+margin-top: 32px;
+margin-left: 156px;
+}
+
+.field {
+display: flex;
+flex-direction: column;
+}
+
+.value {
+font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    text-align: center;
+}
+
+.label {
+font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    text-align: center;
+}
