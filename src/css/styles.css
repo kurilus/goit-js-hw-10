@@ -6,6 +6,8 @@
     margin-left: 156px;
 }
 
+
+/* ...............DATE FIELD................... */
 .timer-input {
 display: flex;
     align-items: flex-start;
@@ -15,10 +17,32 @@ display: flex;
     border-radius: 4px;
     width: 272px;
     height: 40px;
+    font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
+        border: 1px solid #808080;
+        transition: border 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.timer-input:hover {
+    border: 1px solid #000;
+}
+
+.timer-input:focus {
+    border: 1px solid #4e75ff;
+    color: #000;
+}
+
+.timer-input:disabled {
+    color: #808080;
+}
+
+/* ...............BUTTON................... */
 .timer-btn {
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -27,14 +51,80 @@ display: flex;
     padding: 8px 16px;
     width: 75px;
     height: 40px;
-    background-color: #cfcfcf;
-    outline: none;
+    background: #4e75ff;
     font-family: "Montserrat", sans-serif;
-        font-weight: 500;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.timer-btn:hover:not(:disabled) {
+    background-color: #6c8cff;
+    color: #fff;
+}
+
+.timer-btn:disabled {
+        background-color: #cfcfcf;
+        color: #989898;
+}
+
+/* ...............CALENDAR................... */
+.flatpickr-day.today {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100%;
+    stroke-width: 1px;
+    stroke: #4e75ff;
+    color: #2e2f42;
+    text-align: center;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.flatpickr-current-month {
+    font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+}
+
+.flatpickr-current-month .numInputWrapper {
+    display: none;
+}
+
+.flatpickr-time {
+    font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+}
+
+.flatpickr-day {
+    font-family: "Montserrat", sans-serif;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #989898;
+        text-align: center;
+        color: #666; 
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+.flatpickr-day:hover {
+    background-color: #c1c1c1;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.flatpickr-day.selected {
+    background-color: #646cff;
+    color: #fff; 
 }
 
 .timer {

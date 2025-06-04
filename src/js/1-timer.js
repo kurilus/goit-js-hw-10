@@ -31,12 +31,23 @@ const options = {
 
     if (selected <= now) {
       iziToast.error({
-        title: "Помилка",
-        message: "Please choose a date in the future",
+        title: "Error",
+        message: "Illegal operation",
+        titleColor: "#fff",
+        messageColor: "#fff",
+        backgroundColor: "#ef4444",
         position: "topRight",
+        timeout: 5000,
+        progressBarColor: "#fff",
+        close: true,
+        closeOnClick: true,
+        animateInside: true,
+        transitionIn: "fadeInDown",
+        transitionOut: "fadeOutUp",
       });
       startButton.disabled = true;
-    } else {
+    }
+    else {
       userSelectedDate = selected;
       startButton.disabled = false;
     }
