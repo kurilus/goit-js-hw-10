@@ -1,3 +1,4 @@
+/* ...............TASK 1................... */
 .timer-part {
     display: flex;
     flex-direction: row;
@@ -157,4 +158,37 @@ font-family: "Montserrat", sans-serif;
     line-height: 1.5;
     color: #2e2f42;
     text-align: center;
+}
+
+/* ...............TASK 2................... */
+.form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.delay-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 36px;
+    margin-left: 156px;
+}
+
+.delay-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.delay-input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
 }
