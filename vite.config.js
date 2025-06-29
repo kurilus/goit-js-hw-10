@@ -13,7 +13,11 @@ export default defineConfig(({ command }) => {
     build: {
       sourcemap: true,
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        input: {
+          index: 'src/index.html',
+          timer: 'src/1-timer.html',
+          snackbar: 'src/2-snackbar.html',
+        },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -34,7 +38,7 @@ export default defineConfig(({ command }) => {
           },
         },
       },
-      outDir: '../dist',
+      outDir: '../docs',
       emptyOutDir: true,
     },
     plugins: [
